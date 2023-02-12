@@ -1,0 +1,16 @@
+.div-1, .div-2 {
+    background-color: red;
+}
+.img {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.span-1 {
+    background-color:aquamarine;
+    /* span por defecto es display inline mientras que div es tipo bloque. Las imagenes tienen un display: inline-block; */
+}
+.span-2 {
+    background-color:aquamarine;
+    float: left;
+}

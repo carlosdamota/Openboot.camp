@@ -1,0 +1,28 @@
+/*especificidad
+    (1,0,0 id)
+    (0,1,0 class)
+    (0,0,1 Etiqueta)
+    (0,0,0)*/
+
+/*Si se combinan podemos aumentar la espcificidad y si es del mismo tipo prevalecera la mas alta, tambien pueden convinarse de manera diferente 
+ej: #id #id2 (2,0,0)
+    #id .class (1,1,0)
+Si se define directamente desde style="" inline en el html tiene mayor especificidad
+
+    cualquier elemento le podemos dotar de la mayo especificidad para dar prioridad con el atributo !important
+    Mejores practicas evitar el !important*/
+
+h1 {
+    color: blue !important;
+}
+.h1-clase {
+    color: yellow;
+}
+
+p {
+    color: red;
+}
+
+#h1-id {
+    color: rgb(38, 61, 81);
+}

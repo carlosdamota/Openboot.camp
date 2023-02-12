@@ -1,0 +1,40 @@
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0.5em;
+    height: 100vh;
+}
+
+@media screen and (max-width:640px) {
+    .contenedor {
+        flex-direction: column-reverse;
+    }
+    
+    
+}
+.seccion {
+    display: flex;
+    flex-direction: column; 
+    background-color: aquamarine;
+    align-items: center;
+    justify-content: space-around;
+}
+.seccion.izquierda {
+    width: 20vw;
+}
+@media screen and (max-width:640px) {
+    .seccion.izquierda {
+        width: 100vw;
+        flex-direction: row;
+    }
+    
+}
+.seccion.principal {
+    flex-grow: 1.25;
+}
+@media screen and (max-width:640px) {
+    .seccion.principal {
+        width: 100vw;

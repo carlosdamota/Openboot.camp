@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+.video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+}
+.header {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+header button {
+    color: aquamarine;
+    border-radius: 20px;
+    border-color: aliceblue;
+    background-color: transparent;
+}

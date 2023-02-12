@@ -1,0 +1,35 @@
+h1 {
+    color: blueviolet;
+    
+}
+/*estoy probando colores y fuentes*/
+p {
+    color: antiquewhite;
+    font-size: 2em;
+}
+#primera {
+    color: red;
+    font-size: 12px;
+}
+#segunda {
+    color: burlywood;
+    font-size: 16px;
+}
+.encabezado {
+    text-transform: uppercase;
+}
+* {
+    color: chartreuse;
+}
+*.warning {
+    color: red;
+}
+.autor, .fecha, .ubicacion {
+    text-decoration: underline;
+}
+.fecha {
+    color: blue;
+}
+.ubicacion {
+    color: yellow;
+}

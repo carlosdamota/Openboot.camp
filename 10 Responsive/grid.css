@@ -1,0 +1,24 @@
+.contenedor {
+    display: grid;
+    /*grid-template-columns: auto auto auto;*/
+    /*grid-template-columns: repeat(2, auto);*/
+    /*grid-template-columns: 20px 4rem 25vw;*/
+    grid-template-columns: 3fr 1fr 4fr;
+    grid-template-rows: 20% 1em 30vh;
+    grid-template-areas: 'head head head' 'main main aside' 'foother foother foother';
+
+    
+    gap: 0.5rem;
+    row-gap: 1rem;
+}
+.item {
+    color: aquamarine;
+    background-color:cadetblue;
+    border: solid 1px blue;
+}
+.item1 {
+    grid-area: head;
+}
+.item9 {
+    grid-area: foother;
+}

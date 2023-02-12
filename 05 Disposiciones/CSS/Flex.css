@@ -1,0 +1,30 @@
+/*https://codepen.io/enxaneta/full/adLPwv*/
+
+.flex{
+    /*Posiciona de una manera ordenada todo el contenido de un contenador por defecto es en columnas dentro de una fila o lo que viene siendo lo mismo eje horizonatal*/
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    height: 500px;
+    /*justifi-content: posiciona o justifica desde el eje central(x)*/
+    justify-content:space-around;
+    align-items: center;
+}
+.contenido-1 {
+    background-color: antiquewhite;
+    height: 100px;
+    width: 90%;
+    border: 1px solid blue;
+}
+.contenido-2 {
+    background-color: antiquewhite;
+    height: 100px;
+    width: 100px;
+    border: 1px solid blue;
+}
+.contenido-3 {
+    background-color: antiquewhite;
+    height: 100px;
+    width: 100px;
+    border: 1px solid blue;
+}
