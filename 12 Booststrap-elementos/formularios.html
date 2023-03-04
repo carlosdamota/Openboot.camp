@@ -19,7 +19,8 @@
   </header>
   <main class="container py-4">
 
-<form>
+<form class="p-4">
+    <h1 class="card-header">Formulario</h1>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -28,12 +29,32 @@
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Password</label>
     <input type="password" class="form-control" id="exampleInputPassword1">
+    <div id="passwordHelpBlock" class="form-text">
+        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+      </div>
   </div>
+ 
   <div class="mb-3 form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
+  <div class="mb-3">
+    <input  class="form-control" 
+    list="datalistOptions" 
+    id="exempleDataList" 
+    placeholder="type to search...."
+    >
+
+    <datalist id="datalistOptions">
+        <option value="Madrid"></option>
+        <option value="Malaga"></option>
+        <option value="barcelona"></option>
+        <option value="baleares"></option>
+        <option value="taRRAGONA"></option>
+        
+    </datalist>
+  </div>
 </form>
   </main>
   <footer>
