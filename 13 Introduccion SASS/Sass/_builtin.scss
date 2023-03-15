@@ -1,0 +1,64 @@
+@use "sass:list";
+@use "sass:math";
+@use "sass:string";
+
+@debug "adios";
+@debug string.index("helvetica Neue", "Neue");
+
+$string: "Helvetica";
+$newString: string.insert($string, " Bold", 10);
+
+@debug $newString;
+@debug string.length($newString);
+@debug string.slice($newString, 5, 9);
+
+@debug string.to-upper-case("Roboto Mono");
+@debug string.to-lower-case("Roboto Mono");
+@debug string.unique-id();
+
+/// Funciones con numeros
+@debug "Prueba de funciones de numeros";
+@debug math.$pi;
+@debug math.$e;
+
+@debug math.ceil(5.1);
+@debug math.ceil(4);
+@debug math.ceil(4.8);
+
+@debug math.floor(5.1);
+@debug math.floor(4);
+@debug math.floor(4.8);
+
+@debug math.round(5.1);
+@debug math.round(4);
+@debug math.round(4.8);
+
+
+@debug math.clamp(3, 6, 7);
+@debug math.clamp(3, 1, 7);
+@debug math.clamp(3, 4, 7);
+@debug math.clamp(3, 10, 7);
+@debug math.clamp(368px, 485px, 720px);
+@debug math.clamp(368px, 265px, 720px);
+@debug math.clamp(368px, 1080px, 720px);
+
+@debug math.max(3, 4, 6, 10, 2, 500, 399);
+@debug math.min(3, 4, 6, 10, 2, 500, 399);
+
+@debug math.abs(-100px);
+
+//// Funciones con listas
+@debug "Prueba de funciones de listas";
+
+$lista1: 10px 10px 0px 15px;
+
+@debug $lista1;
+@debug list.append($lista1, 25px, space);
+
+$border-custom: solid 1px #ccc;
+@debug list.index($border-custom, 1px);
+@debug list.index($border-custom, solid);
+
+@debug list.is-bracketed(1px 2px 3px);
+@debug list.is-bracketed([1px, 2px, 3px]);
+
